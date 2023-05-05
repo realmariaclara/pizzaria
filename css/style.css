@@ -1,0 +1,139 @@
+/*Reset css para tirar todas as margens dos elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.cabecalho > img{
+    height: 60px;
+}
+
+.cabecalho{
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+        padding-left:20px ;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu > li{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu > li > a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.menu > li:hover{
+    background-color: rgb(196, 43, 43);
+}
+
+/*Estilizando a div*/
+.div-1{
+    display: flex;
+    background-image: url(/pizzaria/img/pizza.jpg);
+    background-size: cover;
+    background-position: top center;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    flex-direction: column;
+    box-shadow: 0 3px 10px green;
+
+}
+
+h1{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 30px;
+}   
+
+.botao-vazado{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.botao-vazado:hover{
+    background-color: rgba(232, 152, 192, 0.748);
+}
+
+/*Estilizando elementos do corpo da página*/
+main{
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2{
+    color: rgb(42, 159, 77);
+    text-shadow: 1px 1px 1px black;
+}
+
+hr{
+    border: none;
+    background: rgb(160,58,76);
+    background: linear-gradient(90deg, rgba(160,58,76,0) 0%, rgba(209,10,10,1) 48%, rgba(210,48,48,0) 87%);
+    height: 3px;
+    margin: 10px 20px;
+}
+
+/*Estilizando cards de sabores*/
+.sabores{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sabor{
+    margin: 10px;
+    background-color: rgb(78, 173, 78);
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.sabor > img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.preco{
+    border: 2px solid yellow;
+    border-radius: 5px;
+    background-color: rgb(239, 239, 6);
+    margin: 20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2px;
+    
+}
+
+.nome{
+    margin-top: 3px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 2px  black;
+    padding-top: 3px;
+}
